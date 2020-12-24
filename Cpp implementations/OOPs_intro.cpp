@@ -4,8 +4,17 @@ using namespace std;
 class Product {
 	public:
 		int id;
+	private:
 		int weight;
-		char name[50];
+	public: 
+		void display() {
+			cout<<"The id is "<<id<<endl;
+		}
+		
+		int getWeight() {
+			cout<<"The weight is: "<<weight<<endl;
+		}
+
 };
 
 int main() {
@@ -13,9 +22,19 @@ int main() {
 	Product s1,s2;
 	
 	s1.id = 10;
-	cout<<s1.id;
+	s1.display();
+	s1.getWeight();
 	//creating objects dynamically 
 	
 	Product* s3;
+	
+	
+	s3->id= 30;
+	
+	s3->display();
+	
+	s3->getWeight();
+	
+	
 	return 0;
 }
