@@ -12,13 +12,18 @@ class Student {
 		}
 		
 		//parameterized constructor
-		Student(int r) {
+		Student(int rollNumber) {
 			cout<<"Constructor 2 called"<<endl;
-			rollNumber = r;
+			this->rollNumber = rollNumber; //mandatory to use this 
 		}
 		
 		int rollNumber;
 		
+		Student(int a, int r) {
+			cout<<"Constructor 3 called"<<endl;
+			age = a;
+			rollNumber = r;
+		}
 		void display() {
 			cout<<age<<" "<<rollNumber<<endl;
 		}

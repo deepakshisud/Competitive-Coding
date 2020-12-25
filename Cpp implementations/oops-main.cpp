@@ -15,5 +15,10 @@ int main() {
 	Student s4(23);
 	s4.display();
 	
+	Student s5(80,45);
+	s5.display();	
+	
+	Student s6(s5);
+	s6.display();
 	return 0;
 }
