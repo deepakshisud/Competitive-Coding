@@ -35,4 +35,8 @@ class Student {
 		int setAge(int a) {
 			age = a;
 		}
+		 //Destructor
+		~Student() {
+			cout<<"Destructor called"<<endl;
+		}
 };

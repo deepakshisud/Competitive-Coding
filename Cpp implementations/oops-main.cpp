@@ -18,7 +18,16 @@ int main() {
 	Student s5(80,45);
 	s5.display();	
 	
+	//Copy constructor 
 	Student s6(s5);
 	s6.display();
+	
+	Student s7(*s3);
+	Student *s8 = new Student(*s3);
+	
+	//Copy assignment operator
+	s6=s7;
+	
+	
 	return 0;
 }
