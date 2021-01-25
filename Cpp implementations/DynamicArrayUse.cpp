@@ -12,6 +12,8 @@ int main()
 	d1.add(50);
 	d1.add(60);
 	
+	cout<<d1.get(3)<<endl;
+	
 	d1.print();
 	
 	DynamicArray d2(d1); //copy constructor - creates shallow copy

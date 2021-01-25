@@ -64,7 +64,7 @@ class DynamicArray {
 			}
 		}
 		
-		int get(int i){
+		int get(int i)const {
 			if(i>=0 && i<nextIndex) {
 				return data[i];
 			} else {
@@ -72,7 +72,7 @@ class DynamicArray {
 			}
 		}
 		
-		void print() {
+		void print()const {
 			for(int i=0;i<nextIndex; i++) {
 				cout<<data[i]<<" ";
 			}
