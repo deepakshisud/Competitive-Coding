@@ -16,7 +16,7 @@ class Fraction {
 		}
 		
 		//Fraction f2 - copy constructor is called
-		//adding & and const refers to the same place in memory without m
+		//adding & and const refers to the same place in memory without making a new memory space.
 		void add(Fraction const &f2)  {
 			int lcm = this->denominator * f2.denominator;
 			int x = lcm/denominator;
