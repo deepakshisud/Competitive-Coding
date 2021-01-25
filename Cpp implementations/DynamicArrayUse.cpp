@@ -13,5 +13,16 @@ int main()
 	d1.add(60);
 	
 	d1.print();
+	
+	DynamicArray d2(d1); //copy constructor - creates shallow copy
+	
+	DynamicArray d3;
+	d3 = d1; //copy assignment operator called - also creates shallow copy
+	
+	d1.add(100,0);
+	d1.print();
+	d2.print();
+	d3.print();
+	
 	return 0;
 }
