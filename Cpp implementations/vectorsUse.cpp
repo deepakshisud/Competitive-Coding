@@ -8,6 +8,9 @@ int main() {
 	
 	vector<int> *vp = new vector<int> (); // dynamic
 	
+	vector<int> v1(10, -2); // number of elements, initialize
+	//here each element will be initialized to -2
+	
 	//inserting
 	v.push_back(10);
 	v.push_back(20);
