@@ -20,6 +20,18 @@ class BTNode{
 		}
 };
 
+void printTree(BTNode<int>* root) {
+	if(root==NULL) return;
+	cout<<root->data<<": ";
+	if(root->left!=NULL)
+		cout<<"L"<<root->left->data<<" ";
+	if(root->right!=NULL)
+	cout<<"R"<<root->right->data<<" ";
+	cout<<endl;
+	printTree(root->left);
+	printTree(root->right);
+}
+
 int main() {
 	
 	BTNode<int>* root = new BTNode<int>(1);
@@ -28,7 +40,7 @@ int main() {
 	root->left = n1;
 	root->right = n2;
 	
-	delete root;
+	printTree(root);
 	
 	return 0;
 }
